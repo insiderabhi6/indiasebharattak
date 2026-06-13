@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", sans-serif;
+  
+  --color-brand-primary: #DDCBB2;
+  --color-brand-bg: #F8F5F0;
+  --color-brand-text: #2F2A24;
+  --color-brand-accent: #C97A1D;
+  --color-brand-accent-secondary: #3E5C4A;
+  --color-brand-border: #E9DFD2;
+}
+
+@layer utilities {
+  .bg-noise {
+    background-image: radial-gradient(rgba(47, 42, 36, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations & smooth scrolling */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E9DFD2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DDCBB2;
+}

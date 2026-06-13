@@ -1,0 +1,6 @@
+{
+  "name": "India Se Bharat Tak",
+  "description": "Rediscover Indian traditions, wellness habits, and rituals explained through modern science, practical reasoning, and everyday application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
